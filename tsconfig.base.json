@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@app/backend-root": ["libs/backend/root/src/index.ts"],
+      "@app/backend-routes-generator": [
+        "libs/backend/routes-generator/src/index.ts"
+      ],
+      "@app/backend-test": ["libs/backend/test/src/index.ts"],
+      "@app/frontend-pages-home": ["libs/frontend/pages/home/src/index.ts"],
+      "@app/frontend-root": ["libs/frontend/root/src/index.ts"],
+      "@app/frontend-utils": ["libs/frontend/utils/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
